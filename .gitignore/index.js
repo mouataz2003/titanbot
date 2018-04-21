@@ -19,7 +19,7 @@ bot.on('ready', function() {
 
 bot.on('message', message => {
     if (message.content'*help') {
-    message.channel.sendmessage('Les Command Est : \n *help \n *ping \n *avatar')
+    message.channel.sendmessage('Les Command Est : \ *help \ *ping \ *avatar')
 }
 
 if (message.content'*ping') {
@@ -34,4 +34,4 @@ bot.on('message', message => {
 }
 })
 
-bot.login('NDM3MTk2Mzc2NDA1OTY2ODQ4.Dby9JA.qLR_3-LQYz9cDX5OZC6vBSWp3to')
+bot.login('NDM3MTk2Mzc2NDA1OTY2ODQ4.DbzHRg.F66k8WBmM8MNzdVwDGlx2jqsW5I')
