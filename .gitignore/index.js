@@ -34,4 +34,4 @@ bot.on('message', message => {
 }
 })
 
-bot.login('NDM3MTk2Mzc2NDA1OTY2ODQ4.DbywfQ.JEZb9JSTB-N_RGMtsQ8SeJdcBXs')
+bot.login('NDM3MTk2Mzc2NDA1OTY2ODQ4.Dby9JA.qLR_3-LQYz9cDX5OZC6vBSWp3to')
