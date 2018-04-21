@@ -19,18 +19,18 @@ bot.on('ready', function() {
 
 bot.on('message', message => {
     if (message.content'*help') {
-    message.channel.sendmessage('Les Command Est : \ *help \ *ping \ *avatar')
+    message.channel.sendMessage('Les Command Est : \ *help \ *ping \ *avatar')
 }
 
 if (message.content'*ping') {
-    message.channel.send('pong !')
+    message.channel.sendMessage('pong !')
 }
 
 })
 
 bot.on('message', message => {
     if (message.content'*avatar') {
-    message.channel.sendmessage(message.author.avatarURL)
+    message.channel.sendMessage(message.author.avatarURL)
 }
 })
 
