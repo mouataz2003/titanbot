@@ -1,14 +1,13 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 
-var prefix = ("*")
 bot.on('ready', function () {
     console.log("Je suis connecté !")
 })
 
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
-    return channel.send('Welcome To Gamers_Minecraft мc' + member.displayName)
+    return channel.send('Welcome To TitanCraft' + member.displayName)
 }).catch(console.error)
 })
 
@@ -19,18 +18,18 @@ bot.on('ready', function() {
 })
 
 bot.on('message', message => {
-    if (message.content === prefix + 'help') {
+    if (message.content'*help') {
     message.channel.sendmessage('Les Command Est : \n *help \n *ping \n *avatar')
 }
 
-if (message.content === prefix + 'ping') {
+if (message.content'*ping') {
     message.channel.send('pong !')
 }
 
 })
 
 bot.on('message', message => {
-    if (message.content === prefix + 'avatar') {
+    if (message.content'*avatar') {
     message.channel.sendmessage(message.author.avatarURL)
 }
 })
