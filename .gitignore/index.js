@@ -12,24 +12,23 @@ bot.on('guildMemberAdd', member => {
 })
 
 bot.on('ready', function() {
-    //bot.user.setGame('*help')
     bot.user.setActivity('*help')
 
 })
 
 bot.on('message', message => {
-    if (message.content'*help') {
+    if (message.content === '*help') {
     message.channel.sendMessage('Les Command Est : \ *help \ *ping \ *avatar')
 }
 
-if (message.content'*ping') {
+if (message.content === '*ping') {
     message.channel.sendMessage('pong !')
 }
 
 })
 
 bot.on('message', message => {
-    if (message.content'*avatar') {
+    if (message.content === '*avatar') {
     message.channel.sendMessage(message.author.avatarURL)
 }
 })
